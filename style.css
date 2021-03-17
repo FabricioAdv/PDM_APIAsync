@@ -1,0 +1,190 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body,
+.root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.js-escondido {
+    display: none !important;
+}
+
+body,
+.app {
+    background: #2c2c2c;
+}
+
+.lista-veiculos {
+    padding-top: 60px;
+}
+
+.lista-veiculos-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #d5d8df;
+    display: flex;
+}
+
+.buscar-veiculos {
+    width: 100%;
+    padding: 20px 60px 20px 60px;
+    background-image: url('./icones/pesquisar.svg');
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 1.2em;
+    font-size: 1.2em;
+    border: 0;
+    outline: none;
+}
+
+.mostrando-veiculos {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mostrando-veiculos button {
+    color: blue;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.veiculo-lista {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.veiculo-lista-item {
+    padding: 20px;
+    background: white;
+    display: flex;
+}
+
+@media (min-width: 600px) {
+    .veiculo-lista-item {
+        margin: 20px;
+        border: 1px solid #d5d8df;
+        border-radius: 4px;
+    }
+}
+
+.veiculo-avatar {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* .veiculo-detalhes {
+    padding-left: 20px;
+    border-right: 1px solid #eee;
+
+    flex: 1;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+/* .veiculo-detalhes p {
+    margin: 0;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+} */
+
+.veiculo-remover {
+    padding-left: 100px;
+    align-self: center;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    background-image: url('./icones/cancelar.svg');
+    background-size: 100% 100%;
+    border: 0;
+    color: black;
+    font-size: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+}
+
+.veiculo-editar
+{
+    padding-left: 20px;
+    align-self: center;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    background-image: url('./icones/edit.svg');
+    background-size: 100% 100%;
+    border: 0;
+    color: black;
+    font-size: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+}
+
+.titulo
+{
+    text-align: center;
+    color: white;
+    /* border-bottom: 1px solid white; */
+    font-size: xx-large;
+    font-weight: bold;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.loader 
+{
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+}
+
+.loader span
+{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -150px;
+
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
